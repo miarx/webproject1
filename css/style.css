@@ -323,7 +323,9 @@ a:hover {
     font-family: inherit;
 }
 
-.form__input:invalid:touched {
+.form__input:user-invalid,
+.form__select:user-invalid,
+.form__textarea:user-invalid {
     border-color: #ef4444;
 }
 
