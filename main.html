@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Марія — Студентське портфоліо</title>
+  <meta name="description" content="Персональне студентське портфоліо Марії: освіта, навички, захоплення та світогляд.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Марія — Персональне портфоліо">
+  <meta property="og:description" content="Студентка прикладної математики, аналітик даних початківець, мандрівниця.">
+  <meta property="og:image" content="img/avatar-desktop.webp">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Skip Link for Keyboard Navigation -->
+<a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+
+<!-- Sticky Header -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="header__logo" aria-label="Головна сторінка">Марія.Портфоліо</a>
+
+    <!-- Pure CSS burger navigation via details/summary -->
+    <nav class="nav" aria-label="Головна навігація">
+      <details class="nav__menu">
+        <summary class="nav__summary" aria-label="Відкрити або закрити меню">Меню ☰</summary>
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link nav__link--active">Про мене</a></li>
+          <li><a href="#education-lyceum" class="nav__link">Освіта</a></li>
+          <li><a href="#skills" class="nav__link">Навички</a></li>
+          <li><a href="books.html" class="nav__link">Книги</a></li>
+          <li><a href="travel.html" class="nav__link">Подорожі 2026</a></li>
+          <li><a href="#schedule" class="nav__link">Розклад</a></li>
+          <li><a href="#contact" class="nav__link">Контакти</a></li>
+        </ul>
+      </details>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <!-- 1. Про мене -->
+  <section id="about" class="section">
+    <div class="container about-layout animated-entry">
+      <div class="about-layout__media">
+        <!-- Responsive Picture Tag -->
+        <picture>
+          <source media="(min-width: 1200px)" srcset="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400' style='background:%23e2e8f0;'><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%2364748b' font-family='sans-serif' font-size='20'>Фото (Desktop)</text></svg>">
+          <source media="(min-width: 768px)" srcset="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300' style='background:%23e2e8f0;'><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%2364748b' font-family='sans-serif' font-size='18'>Фото (Tablet)</text></svg>">
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='250' height='250' style='background:%23e2e8f0;'><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%2364748b' font-family='sans-serif' font-size='16'>Фото Марії</text></svg>" alt="Портретне фото студентки Марії" width="250" height="250" loading="lazy">
+        </picture>
+      </div>
+      <div class="about-layout__content text-constrained">
+        <h1>Марія</h1>
+        <p>Привіт! Мені 19 років, я студентка факультету прикладної математики. Цікавлюся аналітикою даних, інформаційними системами, мистецтвом та відкриттям світу через подорожі.</p>
+        <blockquote class="quote">
+          <p>«Не бійся не впоратись — бійся навіть не спробувати»</p>
+        </blockquote>
+        <address class="contacts-compact">
+          <p>Телефон: <a href="tel:+380679857040">+380 (67) 985-70-40</a></p>
+          <p>Telegram: <a href="https://t.me/miarxxx" target="_blank" rel="noopener">@miarxxx</a></p>
+          <p>Instagram: <a href="https://instagram.com" target="_blank" rel="noopener">@instagram</a></p>
+        </address>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Освіта: Школа / Ліцей -->
+  <section id="education-lyceum" class="section">
+    <div class="container text-constrained">
+      <h2 class="section__title">Базова середня освіта</h2>
+      <article class="card">
+        <h3>Подільський науковий ліцей, м. Вінниця</h3>
+        <p><time datetime="2020-09">Вересень 2020</time> — <time datetime="2024-05">Травень 2024</time></p>
+        <p>Закінчила заклад з відзнакою у класі з поглибленим вивченням математики. Брала активну участь в учнівських олімпіадах та наукових турнірах.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 3. Освіта: Університет -->
+  <section id="education-university" class="section">
+    <div class="container text-constrained">
+      <h2 class="section__title">Вища освіта</h2>
+      <article class="card">
+        <span class="card__badge">3 курс</span>
+        <h3>Львівський національний університет імені Івана Франка</h3>
+        <p><time datetime="2024-09">Вересень 2024</time> — теперішній час</p>
+        <p>Освітня програма «Прикладна математика». Відмінна успішність, отримую підвищену академічну стипендію. Регулярно відвідую профільні лекції, семінари та воркшопи зі спеціальності.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4. Улюблені дисципліни -->
+  <section id="courses" class="section">
+    <div class="container">
+      <h2 class="section__title">Улюблені навчальні дисципліни</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Бази даних та інформаційні системи</h3>
+          <p>Фундаментальний напрям мого професійного розвитку. Вивчаю проєктування реляційних баз даних, синтаксис SQL та роботу з масивами даних для аналітики.</p>
+        </article>
+        <article class="card">
+          <h3>Теорія ймовірностей та математична статистика</h3>
+          <p>Дисципліна, що дає математичну строгість усім висновкам в аналітиці й машинному навчанні.</p>
+        </article>
+        <article class="card">
+          <h3>Чисельні методи</h3>
+          <p>Практичне застосування алгоритмів для обчислення складних математичних моделей на комп'ютері.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Навички (CSS-індикатори) -->
+  <section id="skills" class="section">
+    <div class="container text-constrained">
+      <h2 class="section__title">Навички та компетенції</h2>
+      <ul class="skill-list">
+        <li class="skill-list__item">
+          <div class="skill-list__label">SQL / Реляційні бази даних</div>
+          <div class="skill-list__bar" aria-hidden="true">
+            <div class="skill-list__progress" style="width: 85%;"></div>
+          </div>
+        </li>
+        <li class="skill-list__item">
+          <div class="skill-list__label">Python (Аналіз даних, математичне моделювання)</div>
+          <div class="skill-list__bar" aria-hidden="true">
+            <div class="skill-list__progress" style="width: 80%;"></div>
+          </div>
+        </li>
+        <li class="skill-list__item">
+          <div class="skill-list__label">Git / Контроль версій</div>
+          <div class="skill-list__bar" aria-hidden="true">
+            <div class="skill-list__progress" style="width: 75%;"></div>
+          </div>
+        </li>
+        <li class="skill-list__item">
+          <div class="skill-list__label">Відеомонтаж та робота з контентом</div>
+          <div class="skill-list__bar" aria-hidden="true">
+            <div class="skill-list__progress" style="width: 70%;"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. Хобі та захоплення -->
+  <section id="hobbies" class="section">
+    <div class="container">
+      <h2 class="section__title">Хобі та захоплення</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Фото- та відеозйомка</h3>
+          <p>Знімаю атмосферні кадри під час подорожей, монтую естетичні ролики, фіксуючи моменти життя.</p>
+        </article>
+        <article class="card">
+          <h3>Мистецтво та театр</h3>
+          <p>Обожнюю відвідувати вистави у театрі, картинні галереї та живі концерти для натхнення.</p>
+        </article>
+        <article class="card">
+          <h3>Психологія та поезія</h3>
+          <p>Читаю фахову літературу з психології людини та треную пам'ять вивченням віршів напам'ять.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Музика -->
+  <section id="music" class="section">
+    <div class="container text-constrained">
+      <h2 class="section__title">Музичні вподобання</h2>
+      <p>Музика створює настрій для навчання та подорожей. Серед моїх безумовних фаворитів:</p>
+      <ul>
+        <li><strong>Океан Ельзи</strong> — мелодика, наповнена змістом та спогадами.</li>
+        <li><strong>Schmalgauzen</strong> — неперевершена театральна експресія, поетичність і кабаре-джаз.</li>
+        <li><strong>Джазова музика</strong> — інструментальний затишок, ідеальний для зосередження.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 8. Фільми та серіали -->
+  <section id="media" class="section">
+    <div class="container">
+      <h2 class="section__title">Кінематограф</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Інтерстеллар & Оппенгеймер</h3>
+          <p>Глибокі стрічки Крістофера Нолана, де фундаментальна наука переплітається з людською трагедією.</p>
+        </article>
+        <article class="card">
+          <h3>Гордість та упередження</h3>
+          <p>Класична атмосфера, тонкий психологізм характерів та естетичні пейзажі.</p>
+        </article>
+        <article class="card">
+          <h3>Менталіст & Шерлок</h3>
+          <p>Серіали про силу спостережливості, аналітичний склад розуму та логічні дедуктивні ланцюжки.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Спорт та активності -->
+  <section id="sports" class="section">
+    <div class="container">
+      <h2 class="section__title">Спорт та активності</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Скелелазіння</h3>
+          <p>Тренування на скеледромі: розвиток координації, витривалості та вміння знаходити шлях у складних умовах.</p>
+        </article>
+        <article class="card">
+          <h3>Хайкінг у горах</h3>
+          <p>Сходження на вершини, де відчувається масштаб природи та перевіряється сила волі.</p>
+        </article>
+        <article class="card">
+          <h3>Біг та марафони</h3>
+          <p>Участь у забігах, постійна дисципліна та регулярні тренування в залі.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Таблиця: Академічний розклад або статистика -->
+  <section id="schedule" class="section">
+    <div class="container">
+      <h2 class="section__title">Академічний розклад та статистика</h2>
+      <div class="table-wrapper">
+        <table class="table">
+          <caption>Тижневий фокус дисциплін на поточному семестрі</caption>
+          <thead>
+          <tr>
+            <th scope="col">День</th>
+            <th scope="col">Дисципліна</th>
+            <th scope="col">Формат</th>
+            <th scope="col">Аудиторія / Платформа</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">Понеділок</th>
+            <td>Бази даних та інформаційні системи</td>
+            <td>Лекція</td>
+            <td>Ауд. 214</td>
+          </tr>
+          <tr>
+            <th scope="row">Вівторок</th>
+            <td>Аналітика даних та статистика</td>
+            <td>Лабораторна робота</td>
+            <td>Комп'ютерний клас 4</td>
+          </tr>
+          <tr>
+            <th scope="row">Середа</th>
+            <td>Чисельні методи</td>
+            <td>Практичне заняття</td>
+            <td>Ауд. 308</td>
+          </tr>
+          <tr>
+            <th scope="row">П'ятниця</th>
+            <td>Скелелазіння / Зал</td>
+            <td>Фізична активність</td>
+            <td>Спорткомплекс</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Цікаві факти -->
+  <section id="facts" class="section">
+    <div class="container text-constrained">
+      <h2 class="section__title">Цікаві факти про мене</h2>
+      <ul>
+        <li>Відвідала 13 країн світу й продовжую поповнювати цей перелік.</li>
+        <li>Не люблю мандарини та апельсини (унікальне гастрономічне виключення!).</li>
+        <li>З раннього дитинства впевнено катаюся на роликах.</li>
+        <li>Закінчила музичну школу та 10 років присвятила бальним танцям.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 12. Цитати -->
+  <section id="quotes" class="section">
+    <div class="container text-constrained">
+      <h2 class="section__title">Життєві орієнтири</h2>
+      <blockquote class="quote">
+        <p>«Вогонь запеклих не пече.»</p>
+        <cite>— Тарас Шевченко</cite>
+      </blockquote>
+      <blockquote class="quote">
+        <p>«Сміливі завжди мають щастя.»</p>
+        <cite>— Іван Багряний, «Тигролови»</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- 13. Форма зворотного зв'язку -->
+  <section id="contact" class="section">
+    <div class="container text-constrained">
+      <h2 class="section__title">Зворотний зв'язок</h2>
+      <form class="form" action="#" method="get">
+        <div class="form__group">
+          <label for="name">Ваше ім'я:</label>
+          <input type="text" id="name" name="name" class="form__input" required minlength="2" placeholder="Олена">
+        </div>
+
+        <div class="form__group">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" id="email" name="email" class="form__input" required placeholder="user@domain.com">
+        </div>
+
+        <div class="form__group">
+          <label for="topic">Тема повідомлення:</label>
+          <select id="topic" name="topic" class="form__select" required>
+            <option value="" disabled selected>Оберіть тему звернення</option>
+            <option value="study">Навчання та проєкти</option>
+            <option value="collab">Співпраця / Аналітика</option>
+            <option value="other">Інше питання</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <label for="message">Повідомлення:</label>
+          <textarea id="message" name="message" class="form__textarea" rows="4" required minlength="10" placeholder="Ваше текстове повідомлення..."></textarea>
+        </div>
+
+        <div class="form__group form__checkbox">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">Я погоджуюся на обробку наданих контактних даних</label>
+        </div>
+
+        <button type="submit" class="form__button">Надіслати запит</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>&copy; 2026 Марія. Усі права захищено.</p>
+    <ul class="footer__socials">
+      <li><a href="https://t.me/miarxxx" target="_blank" rel="noopener" aria-label="Telegram профіль">Telegram</a></li>
+      <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram профіль">Instagram</a></li>
+    </ul>
+    <a href="#about" class="footer__to-top">Нагору ↑</a>
+  </div>
+</footer>
+</body>
+</html>
