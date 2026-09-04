@@ -556,7 +556,7 @@ main > .section:nth-of-type(even) {
     color: var(--ink-muted);
 }
 
-/* Цитата */
+
 .quote {
     position: relative;
     max-width: 46ch;
@@ -990,13 +990,13 @@ main > .section:nth-of-type(even) {
     }
 }
 
-/* ---------- Галерея подорожей (figure / figcaption) ---------- */
+
 .gallery-card {
     padding: 12px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    clip-path: none; /* вимикаємо рваний край для фотокарток */
+    clip-path: none;
 }
 
 .gallery-card picture,
