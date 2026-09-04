@@ -206,23 +206,55 @@ img {
     background: var(--gold);
     color: var(--ink);
 }
+.mobile-menu {
+    position: relative;
+}
+
+.mobile-menu summary {
+    cursor: pointer;
+}
+
+.mobile-menu summary::-webkit-details-marker {
+    display: none;
+}
 
 .nav-mobile {
     position: absolute;
     right: 0;
     top: calc(100% + 10px);
-    display: none;
+
+    display: flex;
     flex-direction: column;
     gap: 2px;
+
     min-width: 210px;
+
     border: 1px solid var(--ink);
     background: var(--surface);
+
     padding: 12px;
+
     box-shadow: 4px 4px 0 var(--gold);
     list-style: none;
 }
-.nav-mobile.open {
-    display: flex;
+
+.nav-mobile a {
+    display: block;
+    padding: 6px 8px;
+
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+
+    color: var(--ink);
+    text-decoration: none;
+
+    transition: background 0.2s;
+}
+
+.nav-mobile a:hover,
+.nav-mobile a:focus {
+    background-color: var(--paper-alt);
+}
 }
 .nav-mobile-link {
     display: block;
@@ -246,20 +278,11 @@ img {
 }
 
 @media (min-width: 1024px) {
-    .nav-list,
-    .nav__menu .nav__list {
+    .nav-list {
         display: flex;
-        position: static;
-        background: transparent;
-        border: none;
-        box-shadow: none;
-        padding: 0;
     }
-    .nav-toggle,
-    .nav__summary {
-        display: none;
-    }
-    .nav-mobile {
+
+    .mobile-menu {
         display: none;
     }
 }
@@ -704,7 +727,22 @@ main > .section:nth-of-type(even) {
 .skill-list__progress {
     height: 100%;
     background: var(--rust);
-    transition: width 0.8s ease-in-out;
+}
+
+.skill-85 {
+    width: 85%;
+}
+
+.skill-80 {
+    width: 80%;
+}
+
+.skill-75 {
+    width: 75%;
+}
+
+.skill-70 {
+    width: 70%;
 }
 
 .facts-list,
@@ -897,4 +935,45 @@ main > .section:nth-of-type(even) {
         transition: none;
         scroll-behavior: auto;
     }
+}
+
+/* ---------- Галерея подорожей (figure / figcaption) ---------- */
+.gallery-card {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    clip-path: none; /* вимикаємо рваний край для фотокарток */
+}
+
+.gallery-card picture,
+.gallery-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px solid var(--line-strong);
+    background-color: var(--paper-alt);
+}
+
+.gallery-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.gallery-caption strong {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    color: var(--ink);
+}
+
+.gallery-caption .meta {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--teal-dark);
+}
+
+.gallery-caption .body {
+    font-size: 0.9rem;
+    color: var(--ink-muted);
 }
