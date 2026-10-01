@@ -624,11 +624,11 @@ main > .section:nth-of-type(even) {
 .grid,
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 2fr));
     gap: 1.25rem;
 }
 
-
+2
 .card {
     position: relative;
     border-radius: 2px;
